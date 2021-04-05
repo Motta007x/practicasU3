@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="conversor binario/hexadecimal">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navegacion-principal">
+        <li><a href="">Practicas</a></li>
+        <li><a href="https://david2508.github.io/calculadoraequipo5/"> Blog Equipo </a></li>
+        </li>
+      </nav>
+
+    <title> Conversor </title>
+    <h1> Conversor de decimal a binario/hexadecimal</h1>
+    <p> Selecciona uno: </p>
+    <button onclick="openWindowB()"> Binario </button>
+    <button onclick="openWindowH()"> Hexadecimal </button>
+
+    <script>
+        function openWindowB() {
+            window.open("bin.html", "Binario", "width=600px, height=300px, top=200, left=400, scrollbars=true");
+        }
+        function openWindowH() {
+            window.open("hex.html", "Hexadecimal", "width=600px, height=300px, top=200, left=400, scrollbars=true");
+        }
+    </script>
+</body>
+
+</html>

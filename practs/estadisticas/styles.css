@@ -1,0 +1,46 @@
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+      display: block;
+      font-size: 1.5em;
+      margin-top: 0.83em;
+      margin-bottom: 0.83em;
+      margin-left: 0;
+      margin-right: 0;
+      font-weight: bold;
+      color:green;
+  }
+
+#informacion {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.navegacion-principal{
+    display: flex;
+    justify-content: space-around;
+    background-color:  #1370e9;
+    list-style-type: none;
+    margin-bottom: 30px;
+    padding: 10px;
+    }
+    
+    /* -- CSS navbar -- */
+    .navegacion-principal a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: medium;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    }
+    .navegacion-principal a:hover{
+        color: #000000;
+        background-color: #FFF;
+    }
+    li a, .dropbtn {
+        display: inline-block;
+    }

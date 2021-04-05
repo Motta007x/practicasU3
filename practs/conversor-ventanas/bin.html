@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="conversor binario">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <title> Binario </title>
+        <h1> Conversor a binario </h1>
+        <form >
+            <label >Introduce el numero</label>
+            <input type="text"   id="num" name="numero" value="">
+            <button type="button" onclick="BinP(numero.value)">Verificar</button>
+            <!--
+              <button type="button" onclick="esPar(numero.value)">Verificar</button>
+            -->
+            <button type="button" onclick="limpiar()">Limpiar Todos</button>
+       
+         </form>
+
+         <script type="text/javascript">
+            function limpiar(){
+        
+            lista=document.querySelectorAll('p');
+        
+            if(lista.length!=0){
+                i=lista.length-1;  // posiciona en el último párrafo creado
+                while(i>-1)
+                     lista[i].parentNode.removeChild(lista[i--]);
+            }
+            else alert("No hay parrafos a eliminar");
+          }
+                
+          function BinP(numero) {
+            var resultado = binario(numero);
+                 parrafo = document.createElement("p");
+                 contenido = document.createTextNode("El número "+numero+" es "+resultado);  
+                 parrafo.appendChild(contenido);
+                 document.body.appendChild(parrafo);
+                 document.getElementById("num").value="";
+           }
+
+           function binario(numero){
+                var binario="";
+   	            while(numero>0){
+   	 	        binario=numero%2+binario;
+   	 	        numero=Math.floor(numero/2);
+   	            }
+   	       return binario;
+           }
+        </script>
+    </body>
+</html>

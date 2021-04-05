@@ -1,0 +1,31 @@
+* {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navegacion-principal{
+    display: flex;
+    justify-content: space-around;
+    background-color:  #1370e9;
+    list-style-type: none;
+    margin-bottom: 30px;
+    padding: 10px;
+    }
+    
+    /* -- CSS navbar -- */
+    .navegacion-principal a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: medium;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    }
+    .navegacion-principal a:hover{
+        color: #000000;
+        background-color: #FFF;
+    }
+    li a, .dropbtn {
+        display: inline-block;
+    }
